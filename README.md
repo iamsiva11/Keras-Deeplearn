@@ -2,7 +2,7 @@
 
 Keras is a minimalist, highly modular neural networks library, written in Python and capable of running on top of either TensorFlow or Theano.
 
-This repo will serve as a guide I wish I had, while starting out Keras.
+>This repo will serve as a guide I wish I had, while starting out Keras.
 
 ###Index
 
@@ -43,7 +43,7 @@ Unlike R, Python is a fully featured programming language allowing you to use th
 
 Two of the top numerical platforms in Python that provide the basis for deep learning research and development are Theano and TensorFlow. Both are very powerful libraries, but both can be difficult to use directly for creating deep learning models.
 
-Where does Keras fit into Theano, Tensorflow and of course deep Learning?
+>Where does Keras fit into Theano, Tensorflow and of course deep Learning?
 
 Keras is a minimalist Python library for deep learning that can run on top of Theano or TensorFlow. It is a wrapper library that hides Theano completely and provides a very simple API to work with to create deep learning models.
 
@@ -53,9 +53,7 @@ It was developed to make developing deep learning models as fast and easy as pos
 
 It is released under the permissive MIT license. Keras was developed and maintained by Francois Chollet, a Google engineer
 
-Keras wraps both the TensorFlow and Theano libraries, abstracting their capabilities and hiding their complexity.
-
-Keras is designed for minimalism and modularity allowing you to very quickly define deep learning models.
+Keras wraps both the TensorFlow and Theano libraries, abstracting their capabilities and hiding their complexity.Keras is designed for minimalism and modularity allowing you to very quickly define deep learning models.
 
 Keras is compatible with: Python 2.7-3.5.
 
@@ -94,16 +92,16 @@ The final hidden layer is called the output layer and it is responsible for outp
 
 ###1. Keras's approach to solve Deep Learning Problems
 
-The ideas behind deep learning are simple, so why should their implementation be painful?
+>The ideas behind deep learning are simple, so why should their implementation be painful?
 
-Models can be built up like Lego.
+>Models can be built up like Lego.
 
 Guiding principles:
 
-• Modularity: A model can be understood as a sequence or a graph alone. All the concerns of a deep learning model are discrete components that can be combined in arbitrary ways.
-• Minimalism: The library provides just enough to achieve an outcome, no frills and maximizing readability.
-•  Extensibility: New components are intentionally easy to add and use within the frame- work, intended for developers to trial and explore new ideas.
-• Python: No separate model files with custom file formats. Everything is native Python.
+* Modularity: A model can be understood as a sequence or a graph alone. All the concerns of a deep learning model are discrete components that can be combined in arbitrary ways.
+* Minimalism: The library provides just enough to achieve an outcome, no frills and maximizing readability.
+* Extensibility: New components are intentionally easy to add and use within the frame- work, intended for developers to trial and explore new ideas.
+* Python: No separate model files with custom file formats. Everything is native Python.
 
 Keras deep learning models can be developed using an idiom of defining, compiling and fitting models that can then be evaluated or used to make predictions.
 
