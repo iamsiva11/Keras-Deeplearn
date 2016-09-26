@@ -176,7 +176,15 @@ Models, Layers
 
 Model Creation:
 
-model = Sequential()And domodel.add()
+```python
+model = Sequential()
+```
+
+And do
+
+```python
+model.add()
+```
 
 So, the basic Structure of the model goes like thisDense (<hidden Layers> , <input dimension> )
 
