@@ -34,7 +34,8 @@ This repo will serve as a guide I wish I had, while starting out Keras.
 
 
 ######################################################################################
-0. Just enough Deep learning Theory for Keras
+
+###0. Just enough Deep learning Theory for Keras
 
 Deep learning is a fascinating field. Artificial neural networks have been around for a long time, but something special has happened in recent years. The mixture of new faster hardware, new techniques and highly optimized open source libraries allow very large networks to be created with frightening ease.
 
@@ -90,6 +91,7 @@ Layers after the input layer are called hidden layers because they are not direc
 The final hidden layer is called the output layer and it is responsible for outputting a value or vector of values that correspond to the format required for the problem. The choice of activation function in the output layer is strongly constrained by the type of problem that you are modeling.
 
 ######################################################################################
+
 ###1. Keras's approach to solve Deep Learning Problems
 
 The ideas behind deep learning are simple, so why should their implementation be painful?
