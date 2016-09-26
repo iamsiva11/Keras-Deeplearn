@@ -66,7 +66,7 @@ The field of artificial neural networks is often just called Neural Networks or 
 ######Neurons
 The building block for neural networks are artificial neurons. These are simple computational units that have weighted input signals and produce an output signal using an activation function.
 
-<Neuron Image>
+![<Neurons Image>](images/neurons.jpg)
 
 ######Neuron Weights
 You may be familiar with linear regression, in which case the weights on the inputs are very much like the coefficients used in a regression equation. Like linear regression, each neuron also has a bias which can be thought of as an input that always has the value 1.0 and it too must be weighted. For example, a neuron may have two inputs in which case it requires three weights. One for each input and one for the bias.
@@ -77,7 +77,9 @@ The weighted inputs are summed and passed through an activation function, someti
 ######Networks of Neurons
 Neurons are arranged into networks of neurons. A row of neurons is called a layer and one network can have multiple layers. The architecture of the neurons in the network is often called the network topology. Which are a combination of input layer, output layer and hidden layer.
 
-<Networks of Neurons Image>
+
+![<Networks of Neurons Image>](images/network-of-neurons.jpg)
+
 
 ######Input or Visible Layers
 Given increases in computing power and efficient libraries, very deep neural networks can be constructed. Deep learning can refer to having many hidden layers in your neural network. They are deep because they would have been unimaginably slow to train historically, but may take seconds or minutes to train using modern techniques and hardware.
