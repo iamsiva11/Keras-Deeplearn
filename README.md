@@ -253,30 +253,30 @@ model.load_weights(file path)
 ######################################################################################
 ###4.Keras Layers
 
-*Core Layers
+* Core Layers
 
-	*Dense
+	* Dense
 
-	*Activation
+	* Activation
 
-	*Dropout
+	* Dropout
 
-	*SpatialDropout2D
+	* SpatialDropout2D
 
-	*SpatialDropout3D
+	* SpatialDropout3D
 
-	*Flatten
+	* Flatten
 
-	*Reshape
+	* Reshape
 
-	*Permute
+	* Permute
 
 
-*Convolution Layers
+* Convolution Layers
 
-*Pooling Layers
+* Pooling Layers
 
-*Recurrent Layers
+* Recurrent Layers
 
 
 
