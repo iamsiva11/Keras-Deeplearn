@@ -123,31 +123,42 @@ What does Keras help you achieve ?
 ######################################################################################
 ###2. Coding in Keras
 
-
 The core data structure of Keras is a model, a way to organize layers. The main type of model is the Sequential model, a linear stack of layers.
 
 Here's the Sequential model:
 
+```python
 from keras.models import Sequential
 model = Sequential()
+```
 
 Stacking layers is as easy as .add():
 
+```python
 from keras.layers import Dense, Activation
 model.add(Dense(output_dim=64, input_dim=100))
 model.add(Activation("relu"))
 model.add(Dense(output_dim=10))
 model.add(Activation("softmax"))
+```
 
 Once your model looks good, configure its learning process with .compile():
 
+```python
 model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+```
 
 You can now iterate on your training data in batches:
+
+```python
 model.fit(X_train, Y_train, nb_epoch=5, batch_size=32)
+```
 
 Or generate predictions on new data:
+
+```python
 classes = model.predict_classes(X_test, batch_size=32)
+```
 
 So it goes like as
 1/ Creating a model (and add necessary layers)
@@ -156,6 +167,7 @@ So it goes like as
 4/ Test / Predict
 
 ######################################################################################
+
 Hello World with Keras
 
 
@@ -170,10 +182,13 @@ model = Sequential()And domodel.add()
 
 So, the basic Structure of the model goes like thisDense (<hidden Layers> , <input dimension> )
 
+```python
 model = Sequential([ Dense(32, input_dim=784), Activation('relu'), Dense(10),Activation('softmax'), ])
+```
 
 Sequential model (a linear pile of layers):
 
+```python
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
 
@@ -182,6 +197,7 @@ model.add(Dense(output_dim=64, input_dim=100,init="glorot_uniform"))
 model.add(Activation("relu"))
 model.add(Dense(output_dim=10, init="glorot_uniform"))
 model.add(Activation("softmax"))
+```
 
 Best practices , standard easy of doing things , Custom stuffs
 
@@ -196,24 +212,35 @@ Parameters (to important methods)
 -Optimisers
 -Objectives
 
-Predict
+####Predict
+
+```python
 model.predict()
 classes = model.predict_classes(X_test, batch_size=32)
 proba = model.predict_proba(X_test, batch_size=32)
+```
 
-Training /fit
+####Training/fit
+
+```python
 model.fit(X_train, Y_train, nb_epoch=5, batch_size=32)
 model.train_on_batch(X_batch, Y_batch)
 model.fit
+```
 
-Evaluation
+####Evaluation
+
+```python
 objective_score = model.evaluate(X_test, Y_test,
 batch_size=32)
+```
 
-Load/Save weights Models(to/from a HDF5 file(.h5 extension))
+####Load/Save weights Models(to/from a HDF5 file(.h5 extension))
+
+```python
 model.save_weights(file path)
 model.load_weights(file path)
-
+```
 
 ######################################################################################
 ###4.Keras Layers
@@ -232,22 +259,6 @@ Permute
 Convolution Layers
 Pooling Layers
 Recurrent Layers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
